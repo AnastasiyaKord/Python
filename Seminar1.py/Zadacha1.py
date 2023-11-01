@@ -15,3 +15,10 @@ speed = int(input('Введите скорость: '))
 distance = int(input('Введите расстояние: '))
 time = math.ceil(distance/speed)
 print(time)
+
+# 2
+time = (distance - 1) // speed + 1
+
+# 3
+time = (distance + (speed - 1)) // speed
+time = (750 + (700 - 1)) // 700
