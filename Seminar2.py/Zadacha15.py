@@ -13,15 +13,16 @@
 # Input: 5 -> 5 1 6 5 9
 # Output: 1 9
 
+
 import random
-n = int(input("Введите число: "))
+n = int(input("Введите число : "))
 minimum = 1000000000
 maximum = 0
 for _ in range (n):
     num = random.randint(1, 20)
-    print(num, end = " ")
+    print(num, end=' ')
     if maximum < num:
         maximum = num
-    minimun = min(num, minimum)
+    minimum = min(num, minimum)
 print()
 print(minimum, maximum)
